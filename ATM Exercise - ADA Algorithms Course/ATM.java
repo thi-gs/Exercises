@@ -7,12 +7,13 @@ class ATM{
 		int Balance = 0;
 		boolean ExitProgram = false;
 		
+
+
 		while (ExitProgram == false){
 			SelectedOption = ShowMenu();
 
-			if (SelectedOption.equals("a")){
-				System.out.println("\n\tYour Balance is: " + Balance);
-			} else if (SelectedOption.equals("b")){
+			if (SelectedOption.equals("a")) System.out.println("\n\tYour Balance is: " + Balance);
+			else if (SelectedOption.equals("b")){
 				System.out.println("\n\tType the amount to deposit: ");
 				int Amount = myObj.nextInt();
 				Balance = Amount + Balance;
@@ -20,17 +21,13 @@ class ATM{
 			} else if (SelectedOption.equals("c")){
 				System.out.println("\n\tType the amount to withdraw: ");
 				int Amount = myObj.nextInt();
-				if (Amount > Balance){
-					System.out.println("\n\tWithdraw not allowed, insuficient Balance");
-				} else {
+				if (Amount > Balance) System.out.println("\n\tWithdraw not allowed, insuficient Balance");
+				else {
 					Balance = Balance - Amount;
 					System.out.println("\n\tSuccessful withdraw");
 				}
-			} else if (SelectedOption.equals("d")){
-				ExitProgram = true;
-			} else {
-				System.out.println("\n\tInvalid option, please try again");
-			}
+			} else if (SelectedOption.equals("d"))ExitProgram = true;
+			else System.out.println("\n\tInvalid option, please try again");
 		}
 	}
 	
