@@ -1,0 +1,4 @@
+1) Comment the code to improve clarity;
+2) Treat exceptions -> 
+	* What if the user types a number?
+	* 

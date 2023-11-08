@@ -52,5 +52,4 @@ class ATM{
 		
 		return TypedOption;
 	}
-
 }
