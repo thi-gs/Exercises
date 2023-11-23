@@ -1,0 +1,10 @@
+Planned Improvements:
+- Document the code
+- Areas for improvement:
+#1 The gameValid method could be optimized. Currently, it checks each winning condition (row, column, diagonal) separately for “X” and “0”. You could refactor this to avoid repetition.
+
+#2 The Scanner object is created in each round of the game. It would be more efficient to create it once outside of the loop and reuse it.
+
+#3 The game doesn’t handle invalid inputs. If a player enters a number that’s already been marked or a number outside the range 1-9, the game will overwrite the existing mark or throw an error.
+
+#4 The game doesn’t announce the winner. When the game ends, it simply prints “Game Over!” without indicating who won or if it was a draw.
