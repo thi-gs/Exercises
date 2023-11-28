@@ -5,6 +5,8 @@ Planned Improvements:
 
 #2 The Scanner object is created in each round of the game. It would be more efficient to create it once outside of the loop and reuse it.
 
-#3 The game doesn’t handle invalid inputs. If a player enters a number that’s already been marked or a number outside the range 1-9, the game will overwrite the existing mark or throw an error.
+#3 The game doesn’t handle invalid inputs. 
+DONE #3.1 If a player enters a number that’s already been marked
+#3.2 If a player enters a number outside the range 1-9
 
-#4 The game doesn’t announce the winner. When the game ends, it simply prints “Game Over!” without indicating who won or if it was a draw.
+DONE #4 The game doesn’t announce the winner. When the game ends, it simply prints “Game Over!” without indicating who won or if it was a draw.
